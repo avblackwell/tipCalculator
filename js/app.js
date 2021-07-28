@@ -14,3 +14,17 @@ tipBtns.forEach(btn => {
 tipCustom.addEventListener('input', setTipCustomValue);
 people.addEventListener('input', setPeopleValue);
 resetBtn.addEventListener('click', reset);
+
+let billValue = 0.0; //default value
+let tipValue = 0.15; //default value -> 15% button is active
+let peopleValue = 1; 
+
+function validateFloat(s){
+    var rgx = /^[0-9]*\.?[0-9]*$/;
+    return s.match(rgx);
+}
+
+function validateInt(s){
+    var rgx = /^[0-9]*$/;
+    return s.match(rgx);
+}
